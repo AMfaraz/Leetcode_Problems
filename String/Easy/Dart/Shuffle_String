@@ -1,0 +1,10 @@
+class Solution {
+  String restoreString(String s, List<int> indices) {
+
+      List<String> shuffledString=List.filled(s.length,"");
+      for(int i=0;i<indices.length;i++){
+        shuffledString[indices[i]]=s[i];
+      }
+      return shuffledString.join();
+  }
+}
